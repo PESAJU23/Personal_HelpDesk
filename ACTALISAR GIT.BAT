@@ -1,16 +1,21 @@
 @echo off
+cd /d "E:\Proyecto rafa\Personal_HelpDesk"
 echo ============================================
-echo Actualizando repositorio Git...
+echo ACTUALIZANDO REPOSITORIO EN GITHUB
 echo ============================================
 
 set /p mensaje=Escribe el mensaje del commit: 
-
-cd /d "E:\Proyecto rafa\Personal_HelpDesk"
-git pull
 git add .
 git commit -m "%mensaje%"
-git push
+git push origin main
 
 echo ============================================
-echo ¡Actualización completada!
+echo ¡Cambios subidos correctamente!
 pause
+
+
+
+git pull origin main
+git add .
+git commit -m "Actualización del proyecto"
+git push origin main
