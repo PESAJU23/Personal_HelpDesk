@@ -1,10 +1,7 @@
 <?php
 	require_once("../../config/conexion.php");
 	if (isset($_SESSION["usu_id"])) {
-		// Redirige al usuario a la ruta principal
-		header("Location: " . Conectar::ruta());
-		exit();
-	
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -18,7 +15,9 @@
 	<div class="mobile-menu-left-overlay"></div>
 
     <?php require_once("../MainNav/nav.php"); ?>
+	
 
+	<!-- Contenido de la pagina -->	
 	<div class="page-content">
 		<div class="container-fluid">
 			Blank page.
