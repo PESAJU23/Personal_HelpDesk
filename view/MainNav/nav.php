@@ -8,14 +8,14 @@
     </li>
     <li class="blue-dirty">
       <a href="..\NuevoTicket\">
-        <span class="glyphicon glyphicon-th"></span>
+        <span class="font-icon font-icon-notebook"></span>
         <span class="lbl">Nuevo Ticket</span>
       </a>
     </li>
 
    <li class="blue-dirty">
       <a href="..\ConsultarTicket\">
-        <span class="glyphicon glyphicon-th"></span>
+        <span class="glyphicon glyphicon-list-alt " ></span>
         <span class="lbl">Consultar Ticket</span>
       </a>
     </li>

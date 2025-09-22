@@ -15,6 +15,10 @@
 .label:empty {
   display: none;
 }
+.icon-rojo {
+    color: red;
+}
+
 .btn .label {
   position: relative;
   top: -1px;

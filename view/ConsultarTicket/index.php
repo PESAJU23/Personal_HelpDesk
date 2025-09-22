@@ -25,6 +25,7 @@
 	</div><!--.page-content-->
 
     <?php require_once("../MainJs/js.php");?>
+	<script type="text/javascript" src="consultarticket.js"></script>
 </body>
 </html>
 <?php

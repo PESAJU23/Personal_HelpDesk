@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html>
 	<?php require_once("../MainHead/head.php"); ?>
-    <title>Help Desk Global Cruises :: Acceso</title>
+    <title>Help Desk Global Cruises :: HOME</title>
 </head>
 <body class="with-side-menu">
 
@@ -25,6 +25,7 @@
 	</div><!--.page-content-->
 
     <?php require_once("../MainJs/js.php");?>
+	<script type="text/javascript" src="home.js"></script>
 </body>
 </html>
 <?php
