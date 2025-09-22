@@ -1,6 +1,14 @@
+<?php
+	require_once("../../config/conexion.php");
+	if (isset($_SESSION["usu_id"])) {
+		// Redirige al usuario a la ruta principal
+		header("Location: " . Conectar::ruta());
+		exit();
+	
+?>
 <!DOCTYPE html>
 <html>
-    <?php require_once("../MainHead/head.php"); ?>
+	<?php require_once("../MainHead/head.php"); ?>
     <title>Help Desk Global Cruises :: Acceso</title>
 </head>
 <body class="with-side-menu">
@@ -20,3 +28,11 @@
     <?php require_once("../MainJs/js.php");?>
 </body>
 </html>
+<?php
+	} else {
+		session_destroy();
+		// Redirige al usuario a la ruta principal
+		header("Location: " . Conectar::ruta());
+		exit();
+	}
+?>

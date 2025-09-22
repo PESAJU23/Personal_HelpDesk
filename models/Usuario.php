@@ -22,7 +22,7 @@
                         $_SESSION["usu_nom"] = $resultado["usu_nom"];
                         $_SESSION["usu_ape"] = $resultado["usu_ape"];
                         $_SESSION["usu_correo"] = $resultado["usu_correo"];
-                        $_SESSION[["usu_pass"]] = $resultado["usu_pass"];
+                        $_SESSION["usu_pass"] = $resultado["usu_pass"];
 
                         header("Location: " . Conectar::ruta() . "view/home/");
                         exit();

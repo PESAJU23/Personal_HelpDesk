@@ -6,7 +6,7 @@
 
         protected function Conexion() {
             try {
-                $conectar = $this->dbh = new PDO("mysql:host=localhost;dbname=globalcruises_helpdesk", "root", "");
+                $conectar = $this->dbh = new PDO("mysql:host=localhost;dbname=globalcruises_helpdesk", "root", "20010423");
                 return $conectar;
             } catch (Exception $e) {
                 print "Error BD!: " . $e->getMessage() . "<br/>";
@@ -18,7 +18,8 @@
             return $this->dbh->query("SET NAMES 'utf8'");
         }
 
-        public function ruta() {
+        // Cambia a static
+        public static function ruta() {
             return "http://localhost:80/PERSONAL_HelpDesk/";
         }
     }
